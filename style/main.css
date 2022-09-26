@@ -1,0 +1,208 @@
+ * {
+     padding: 0%;
+     margin: 0%;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+
+ header {
+     position: relative;
+ }
+
+ header nav {
+     width: 100%;
+     padding: 6px 0px;
+     display: flex;
+     justify-content: space-between;
+     background-color: rgb(44, 4, 44);
+     color: white;
+     position: fixed;
+     top: 0%;
+ }
+
+ header nav .logo {
+     margin: 0px 10px;
+     padding: 10px 0px;
+     font-size: 20px;
+     cursor: pointer;
+ }
+
+ header nav .social-icons {
+    display: none;
+}
+
+header nav .social-icons i {
+    margin: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+ header nav .logo span {
+     color: rgb(173, 46, 46);
+ }
+
+ header nav .logo #me {
+     font-size: 20px;
+ }
+
+ header nav .logo h1 {
+     color: black;
+     font-size: 45px;
+ }
+
+ header nav .social-links {
+     margin: 15px 0px;
+ }
+
+ header nav ul {
+     display: flex;
+     justify-content: space-between;
+     list-style-type: none;
+     margin: 5px 10px;
+ }
+
+ header nav ul li a {
+     padding: 10px 20px;
+     text-decoration: none;
+     color: #fff;
+     font-size: 25px;
+ }
+
+ /* ================= background ============= */
+ section .background {
+     width: 100%;
+     height: 100vh;
+     background: url(https://media.istockphoto.com/photos/hairdresser-tools-on-black-background-with-copy-space-in-center-picture-id1020439322?k=20&m=1020439322&s=612x612&w=0&h=G36h0LByMKWWmbNsJbswkMpj-de4SAXIzZZhggQ44kU=);
+     background-size: 100% 100%;
+     background-repeat: none;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ /* =================== login ============= */
+ .h2 {
+     text-align: center;
+     margin: 15px 0px;
+     color: white;
+
+ }
+
+ .background .register .form {
+     background-color: rgb(44, 4, 44);
+     color: white;
+     padding: 20px;
+     width: 100%;
+     border-radius: 20px;
+ }
+
+ .background .register .form span {
+     font-size: 18px;
+ }
+
+ ::placeholder {
+     font-size: 20px;
+     color: white;
+ }
+
+ .background .register .form #form {
+     display: flex;
+     justify-content: space-around;
+     margin: 5px 10px;
+ }
+
+ .input {
+     width: 250px;
+     border: none;
+     border-bottom: 1px solid black;
+     outline: none;
+     padding: 15px 20px;
+     margin: 10px;
+     text-align: right;
+     color: white;
+     background-color: transparent;
+     font-size: 20px;
+ }
+
+ .anderform {
+     text-align: center;
+     margin-top: 15px;
+ }
+
+ .anderform .btn,
+ .login .btn {
+     background-color: purple;
+     padding: 5px 30px;
+     color: #fff;
+     border-radius: 100px;
+     font-size: 18px;
+ }
+
+ .anderform h1 {
+     margin: 10px 0px;
+ }
+
+ .anderform .button {
+     margin: 10px;
+     padding: 5px 15px;
+     border-radius: 5px;
+     font-size: 20px;
+     font-size: 18px;
+ }
+
+ .anderform button .fa-facebook {
+     color: blue;
+ }
+
+ .anderform button .fa-google {
+     color: red;
+ }
+
+ .login {
+     background-color: rgb(44, 4, 44);
+     padding: 15px 20px;
+     color: white;
+     border-radius: 20px;
+ }
+
+ .login .btn {
+     text-align: center;
+     width: 150px;
+     margin: 15px 80px;
+
+ }
+
+ @media only screen and (max-width: 901px) {
+    header {
+        position: relative;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        top: 11.5%;
+        padding: 10px 0px;
+        right: 200%;
+        height: 85vh;
+        width: 35%;
+        background-color: black;
+        border: 1px solid black;
+    }
+
+    header nav .social-icons {
+        display: inline;
+    }
+
+    .showbar {
+        right: 0%;
+    }
+
+    header nav ul li a {
+        color: #fff;
+    }
+    section .background{
+        flex-direction: column;
+        padding: 180px 0px;
+        align-items: space-around;
+    }
+}
